@@ -1,0 +1,854 @@
+{% extends "base.html" %}
+{% block title %}Blog{% endblock title %}
+{% block body %}
+
+
+<div class="outerbox pt-5 pb-5" style="background-color:#17A2B8" >
+  {% comment %} box1 {% endcomment %}
+  <div class="container p-4 p-md-5 mt-0 mb-0 text-white rounded " height='200px' style="background-color:#f7a77e" >
+    <div class="box">
+      <div class="box d-flex justify-content-between">
+        <div class="col-md-6 px-0"> 
+
+          <h1 class="display-4 font-italic">Baguette Pizza</h1>
+          <p class="lead my-3">Take a regular baguette and split lengthwise to create a tasty pizza. Toppings can be as simple as sauce and cheese, or upgrade with pepperoni and sausage.</p>
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">visit for such more dishes...</a></p>
+          <p>
+            <br>
+            <a class="btn btn-info" data-toggle="collapse" href="#box11" role="button" aria-expanded="false" aria-controls="box11">
+              Read more
+            </a>
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#box12" aria-expanded="false" aria-controls="box12">
+              Ingredients
+            </button>
+          </p>
+          <div class="collapse" id="box11">
+            <div class="card card-body text-dark">
+              <pre>
+                <b>Step 1</b> Preheat the oven to 375 degrees F (190 degrees C).
+ 
+                <b>Step 2</b> Split baguette in half lengthwise. Warm pizza sauce in a
+                               microwave-safe bowl until hot, about  45 seconds.
+ 
+                <b>Step 3</b> Spread pizza sauce on baguette, sprinkle on cheese, and 
+                              scatter sausage and pepperoni on top as desired. 
+                              Place pizza onto a baking tray.
+ 
+                <b>Step 4</b> Bake in the preheated oven until cheese is golden, 
+                              about 18 minutes. Optional step: turn on the oven’s broiler, 
+                              set a rack 6 inches below the heating element, and broil the pizza 
+                              for a deeper color, 1 to 2 minutes.
+ 
+                <b>Step 5</b> Cut pizza crosswise into slices. Serve and enjoy.
+               </pre>        
+           </div>
+          </div>
+          <div class="collapse" id="box12">
+            <div class="card card-body text-dark">
+              <pre>
+               . 1 French baguette
+
+               . 1/2 cup pizza sauce, or as needed
+
+               . 2/3 cup shredded mozzarella cheese
+
+               . 2 ounces cooked and crumbled sausage
+
+               . 2 ounces mini pepperoni slices
+              </pre>
+            </div>
+          </div>
+
+         
+          <p>
+            
+            <a class="btn btn-info" data-toggle="collapse" href="#box13" role="button" aria-expanded="false" aria-controls="box13">
+              Add your Comment here
+            </a>
+            <div class="collapse" id="box13">
+              <div class="card card-body text-dark ">
+                <form>
+                  {% comment %} {% csrf_token %} {% endcomment %}
+                  {% comment %} <div class="form-group">
+                      <label for="name">Name </label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Full Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Phone No.</label>
+                      <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your phone no.">
+                  </div>
+                  <div class="form-group">
+                    <label for="dish">Dish Name</label>
+                    <input type="text" class="form-control" id="dish" name="dish" placeholder="Enter your dish name">
+                </div> {% endcomment %}
+                
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comment here...</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"  name="desc" rows="5"></textarea>
+                  </div>
+          
+                  <button type="submit" class="btn btn-info ">submit</button>
+                </form>
+
+              </div>
+            </div>
+          </p>
+          
+          
+        </div>
+  
+        <div>  
+          <img src="static\img\blog1.webp " height='300px'  class="d-block w-100 rounded" alt="...">
+  
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+  {% comment %} box2 {% endcomment %}
+  <div class="container p-4 p-md-5 mt-5 mb-0 text-white rounded " height='200px' style="background-color:#f7a77e" >
+    <div class="box">
+      <div class="box d-flex justify-content-between">
+        <div class="col-md-6 px-0"> 
+
+          <h1 class="display-4 font-italic">Shahi Paneer </h1>
+          <p class="lead my-3">Shahi means royal in Hindi. The soft paneer chunks cooked in the rich and creamy gravy ensures that this recipe is nothing less than true royalty! But this Shahi legacy also makes one believe that it is impossible to cook a true Shahi Paneer at home. However, making Shahi Paneer in the comfort of your kitchen is much easier than you think, as long as you get the right ingredients and follow the recipe correctly. So, don’t wait…it’s time you give it a try!</p>
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">visit for such more dishes...</a></p>
+          <p>
+            <br>
+            <a class="btn btn-info" data-toggle="collapse" href="#box21" role="button" aria-expanded="false" aria-controls="box21">
+              Read more
+            </a>
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#box22" aria-expanded="false" aria-controls="box22">
+              Ingredients
+            </button>
+          </p>
+          <div class="collapse" id="box21">
+            <div class="card card-body text-dark">
+              <pre>
+                <b>Step 1</b> Prepare ingredients as mentioned in the list.
+ 
+                <b>Step 2</b> Pressure cook together onions, tomatoes, ginger and garlic with ½ a cup of water.
+                              Cool and blend into a smooth paste.  
+ 
+                <b>Step 3</b> Heat butter in a pan. Add coriander powder, red chilli powder,  
+                              kasuri methi and the paneer cubes. Sauté for a few minutes  
+ 
+                <b>Step 4</b> Add the onion-tomato paste, ½ cup water and salt to the paneer.
+                              Bring to a boil and simmer for 5 minutes. Then,
+                              add 2 tablespoons of cream and let it simmer for 2 minutes.
+ 
+                <b>Step 5</b> Add the onion-tomato paste, ½ cup water and salt to the paneer.
+                              Bring to a boil and simmer for 5 minutes. Then,
+                              add 2 tablespoons of cream and let it simmer for 2 minutes.
+               </pre>        
+           </div>
+          </div>
+          <div class="collapse" id="box22">
+            <div class="card card-body text-dark">
+              <pre>
+               . 1 Onion (Sliced)
+
+               . 3 Tomato (Chopped)
+
+               . 1/2 Ginger (Chopped)
+
+               . 6 cloves Garlic
+
+               . 1 Teaspoon Butter
+
+               . 1 Teaspoon Coriander Powder
+
+               . 1/2 Teaspoon Red Chilli Powder
+
+               . 1/2 Teaspoon Kasuri Methi
+
+               . 200 gms Paneer (Cubes)
+
+               . 1 cup Water
+
+               . 3 Tablespoon Cream
+
+               . 1 Teaspoon Ginger (Cut Into Juliennes)
+
+               . 1 Tablespoon Coriander Leaves (Chopped)
+
+               . 2 Green Chillies (Slit)
+
+               . 1 gm Salt (To Taste)
+              </pre>
+            </div>
+          </div>
+
+         
+          <p>
+            
+            <a class="btn btn-info" data-toggle="collapse" href="#box23" role="button" aria-expanded="false" aria-controls="box23">
+              Add your Comment here
+            </a>
+            <div class="collapse" id="box23">
+              <div class="card card-body text-dark ">
+                <form>
+                  {% comment %} {% csrf_token %} {% endcomment %}
+                  {% comment %} <div class="form-group">
+                      <label for="name">Name </label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Full Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Phone No.</label>
+                      <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your phone no.">
+                  </div>
+                  <div class="form-group">
+                    <label for="dish">Dish Name</label>
+                    <input type="text" class="form-control" id="dish" name="dish" placeholder="Enter your dish name">
+                </div> {% endcomment %}
+                
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comment here...</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"  name="desc" rows="5"></textarea>
+                  </div>
+          
+                  <button type="submit" class="btn btn-info ">submit</button>
+                </form>
+
+              </div>
+            </div>
+          </p>
+          
+          
+        </div>
+  
+        <div>  
+          <img src="static\img\blog2.jpg " height='300px'  class="d-block w-100 rounded" alt="...">
+  
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+  {% comment %} box3 {% endcomment %}
+  <div class="container p-4 p-md-5 mt-5 mb-0 text-white rounded " height='200px' style="background-color:#f7a77e" >
+    <div class="box">
+      <div class="box d-flex justify-content-between">
+        <div class="col-md-6 px-0"> 
+
+          <h1 class="display-4 font-italic">Dal Makhani </h1>
+          <p class="lead my-3">Dal Makhani is a dish originating from the Punjab region of Peshawar. Became popular in India following partition. The dal gets its richness from the use of cream and butter, but can also be prepared with Yoghurt and Milk. It is now recognised as a quintessential Indian Dish. Traditionally cooked on dying ambers of a coal fire for more than 24 hours. This dal when poured over crispy lachcha parathas or nan with a dollop of butter needs no further accompaniments. For a quirky twist, cut your paratha or naan into strips and serve with the dal as a dip.</p>
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">visit for such more dishes...</a></p>
+          <p>
+            <br>
+            <a class="btn btn-info" data-toggle="collapse" href="#box31" role="button" aria-expanded="false" aria-controls="box31">
+              Read more
+            </a>
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#box32" aria-expanded="false" aria-controls="box32">
+              Ingredients
+            </button>
+          </p>
+          <div class="collapse" id="box31">
+            <div class="card card-body text-dark">
+              <pre>
+                <b>Step 1</b> Soak dal and rajmah overnight. Prepare ingredients as mentioned in the list.
+ 
+                <b>Step 2</b> Wash dal and rajmah and pressure-cook in excess water for one whistle.
+                              Remove from fire and cool slightly, drain and discard the water.
+
+                <b>Step 3</b> Add 4 cups water and salt and pressure cook for another 30 minutes, 
+                              till the dal is well cooked. 
+ 
+                <b>Step 4</b> In a karahi, heat ghee and fry the chopped ginger, garlic and onion till golden brown. 
+                              Add green chillies and red chilli powder and fry for a minute.
+                              Add the tomato puree and cook till the ghee separates. Add to the
+                              dal and bring to a boil, then add MAGGI Masala-ae-Magic
+                              and add salt to taste. Simmer for a few minutes.Remove from fire and mix in the cream. 
+              
+                <b>Step 5</b> Garnish with coriander leaves. Cut the parathas into strips and serve with the Dal Makhani as a dip.
+               </pre>        
+           </div>
+          </div>
+          <div class="collapse" id="box32">
+            <div class="card card-body text-dark">
+              <pre>
+               . 1 cup Sabut Urad Dal
+
+               . 1/4 cup Rajmah
+
+               . 1 pinch Salt 
+
+               . 4 cup Water
+
+               . 2 tablespoon Ghee
+
+               . 1 Teaspoon Ginger
+
+               . 1 Onion
+
+               . 3 Green Chillies
+
+               . 2 Teaspoon Chillies, Red (Capsicum Annum)
+              
+               . 5 Tablespoon Tomato Puree
+
+               . 2 Tablespoon Coriander Leaves (Coriandrum Sativum)
+
+               . 1/2 cup Cream
+
+               . 6 Paratha
+              </pre>
+            </div>
+          </div>
+
+         
+          <p>
+            
+            <a class="btn btn-info" data-toggle="collapse" href="#box33" role="button" aria-expanded="false" aria-controls="box33">
+              Add your Comment here
+            </a>
+            <div class="collapse" id="box33">
+              <div class="card card-body text-dark ">
+                <form>
+                  {% comment %} {% csrf_token %} {% endcomment %}
+                  {% comment %} <div class="form-group">
+                      <label for="name">Name </label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Full Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Phone No.</label>
+                      <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your phone no.">
+                  </div>
+                  <div class="form-group">
+                    <label for="dish">Dish Name</label>
+                    <input type="text" class="form-control" id="dish" name="dish" placeholder="Enter your dish name">
+                </div> {% endcomment %}
+                
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comment here...</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"  name="desc" rows="5"></textarea>
+                  </div>
+          
+                  <button type="submit" class="btn btn-info ">submit</button>
+                </form>
+
+              </div>
+            </div>
+          </p>
+          
+          
+        </div>
+  
+        <div>  
+          <img src="static\img\blog3.jpg " height='300px'  class="d-block w-100 rounded" alt="...">
+  
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+  {% comment %} box4 {% endcomment %}
+  <div class="container p-4 p-md-5 mt-5 mb-0 text-white rounded " height='200px' style="background-color:#f7a77e" >
+    <div class="box">
+      <div class="box d-flex justify-content-between">
+        <div class="col-md-6 px-0"> 
+
+          <h1 class="display-4 font-italic">Cheesy Pav Bhaji</h1>
+          <p class="lead my-3">Pav Bhaji is a native Maharashtrian dish made with an assortment of mashed vegetables, pan-fried on a large tawa and served with Pav toasted in butter. It is immensely popular all across the country because of its spicy and tangy zest. The generous dose of butter that is often used with freshly-cut onions and lemon juice tops the dish. Pav Bhaji is also a great way to feed fussy kids their share of veggies with a smile! You can also serve Pav Bhaji in a bruschetta/canapé style for your next party. Place a generous spoonful of the Bhaji on a sliced Pav, top it with grated cheese and dot with butter. Toast the sliced Pav in a non-stick pan with a lid to melt the cheese!</p>
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">visit for such more dishes...</a></p>
+          <p>
+            <br>
+            <a class="btn btn-info" data-toggle="collapse" href="#box41" role="button" aria-expanded="false" aria-controls="box41">
+              Read more
+            </a>
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#box42" aria-expanded="false" aria-controls="box42">
+              Ingredients
+            </button>
+          </p>
+          <div class="collapse" id="box41">
+            <div class="card card-body text-dark">
+              <pre>
+                <b>Step 1</b> Preheat the oven to 375 degrees F (190 degrees C).
+ 
+                <b>Step 2</b> Split baguette in half lengthwise. Warm pizza sauce in a
+                               microwave-safe bowl until hot, about  45 seconds.
+ 
+                <b>Step 3</b> Spread pizza sauce on baguette, sprinkle on cheese, and 
+                              scatter sausage and pepperoni on top as desired. 
+                              Place pizza onto a baking tray.
+ 
+                <b>Step 4</b> Bake in the preheated oven until cheese is golden, 
+                              about 18 minutes. Optional step: turn on the oven’s broiler, 
+                              set a rack 6 inches below the heating element, and broil the pizza 
+                              for a deeper color, 1 to 2 minutes.
+ 
+                <b>Step 5</b> Cut pizza crosswise into slices. Serve and enjoy.
+               </pre>        
+           </div>
+          </div>
+          <div class="collapse" id="box42">
+            <div class="card card-body text-dark">
+              <pre>
+               . 1 French baguette
+
+               . 1/2 cup pizza sauce, or as needed
+
+               . 2/3 cup shredded mozzarella cheese
+
+               . 2 ounces cooked and crumbled sausage
+
+               . 2 ounces mini pepperoni slices
+              </pre>
+            </div>
+          </div>
+
+         
+          <p>
+            
+            <a class="btn btn-info" data-toggle="collapse" href="#box43" role="button" aria-expanded="false" aria-controls="box43">
+              Add your Comment here
+            </a>
+            <div class="collapse" id="box43">
+              <div class="card card-body text-dark ">
+                <form>
+                  {% comment %} {% csrf_token %} {% endcomment %}
+                  {% comment %} <div class="form-group">
+                      <label for="name">Name </label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Full Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Phone No.</label>
+                      <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your phone no.">
+                  </div>
+                  <div class="form-group">
+                    <label for="dish">Dish Name</label>
+                    <input type="text" class="form-control" id="dish" name="dish" placeholder="Enter your dish name">
+                </div> {% endcomment %}
+                
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comment here...</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"  name="desc" rows="5"></textarea>
+                  </div>
+          
+                  <button type="submit" class="btn btn-info ">submit</button>
+                </form>
+
+              </div>
+            </div>
+          </p>
+          
+          
+        </div>
+  
+        <div>  
+          <img src="static\img\blog4.jpg " height='300px'  class="d-block w-100 rounded" alt="...">
+  
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+
+  {% comment %} box5 {% endcomment %}
+  <div class="container p-4 p-md-5 mt-5 mb-0 text-white rounded " height='200px' style="background-color:#f7a77e" >
+    <div class="box">
+      <div class="box d-flex justify-content-between">
+        <div class="col-md-6 px-0"> 
+
+          <h1 class="display-4 font-italic">Chicken 65</h1>
+          <p class="lead my-3">If you love chicken and also like eating spicy food, Chicken 65 will become your all time favourite! Chunks of chicken, tossed in spicy masala and curry leaves, gives the dish its signature South Indian taste. You can also make a vegetarian version of this dish by using paneer, soya chunks, or cauliflower florets (to enhance the taste) and it tastes great too!</p>
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">visit for such more dishes...</a></p>
+          <p>
+            <br>
+            <a class="btn btn-info" data-toggle="collapse" href="#box51" role="button" aria-expanded="false" aria-controls="box51">
+              Read more
+            </a>
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#box52" aria-expanded="false" aria-controls="box52">
+              Ingredients
+            </button>
+          </p>
+          <div class="collapse" id="box51">
+            <div class="card card-body text-dark">
+              <pre>
+                <b>Step 1</b> Preheat the oven to 375 degrees F (190 degrees C).
+ 
+                <b>Step 2</b> Split baguette in half lengthwise. Warm pizza sauce in a
+                               microwave-safe bowl until hot, about  45 seconds.
+ 
+                <b>Step 3</b> Spread pizza sauce on baguette, sprinkle on cheese, and 
+                              scatter sausage and pepperoni on top as desired. 
+                              Place pizza onto a baking tray.
+ 
+                <b>Step 4</b> Bake in the preheated oven until cheese is golden, 
+                              about 18 minutes. Optional step: turn on the oven’s broiler, 
+                              set a rack 6 inches below the heating element, and broil the pizza 
+                              for a deeper color, 1 to 2 minutes.
+ 
+                <b>Step 5</b> Cut pizza crosswise into slices. Serve and enjoy.
+               </pre>        
+           </div>
+          </div>
+          <div class="collapse" id="box52">
+            <div class="card card-body text-dark">
+              <pre>
+               . 1 French baguette
+
+               . 1/2 cup pizza sauce, or as needed
+
+               . 2/3 cup shredded mozzarella cheese
+
+               . 2 ounces cooked and crumbled sausage
+
+               . 2 ounces mini pepperoni slices
+              </pre>
+            </div>
+          </div>
+
+         
+          <p>
+            
+            <a class="btn btn-info" data-toggle="collapse" href="#box53" role="button" aria-expanded="false" aria-controls="box53">
+              Add your Comment here
+            </a>
+            <div class="collapse" id="box53">
+              <div class="card card-body text-dark ">
+                <form>
+                  {% comment %} {% csrf_token %} {% endcomment %}
+                  {% comment %} <div class="form-group">
+                      <label for="name">Name </label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Full Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Phone No.</label>
+                      <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your phone no.">
+                  </div>
+                  <div class="form-group">
+                    <label for="dish">Dish Name</label>
+                    <input type="text" class="form-control" id="dish" name="dish" placeholder="Enter your dish name">
+                </div> {% endcomment %}
+                
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comment here...</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"  name="desc" rows="5"></textarea>
+                  </div>
+          
+                  <button type="submit" class="btn btn-info ">submit</button>
+                </form>
+
+              </div>
+            </div>
+          </p>
+          
+          
+        </div>
+  
+        <div>  
+          <img src="static\img\blog5.jpg " height='300px'  class="d-block w-100 rounded" alt="...">
+  
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+  {% comment %} box6 {% endcomment %}
+  <div class="container p-4 p-md-5 mt-5 mb-0 text-white rounded " height='200px' style="background-color:#f7a77e" >
+    <div class="box">
+      <div class="box d-flex justify-content-between">
+        <div class="col-md-6 px-0"> 
+
+          <h1 class="display-4 font-italic">Soya Shammi Kathi Roll</h1>
+          <p class="lead my-3">Now vegetarians can also enjoy Shammi Kababs made from Soya Granules. It is an excellent source of protein and is a delicious snack and tiffin option with paranthas. To add a twist, gently crumble the Soya Shammi Kababs, place on a paranthas. Top with chopped onions, coriander leaves and a teaspoon of coriander chutney and roll to make a delicious Soya Shammi Kathi Roll.</p>
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">visit for such more dishes...</a></p>
+          <p>
+            <br>
+            <a class="btn btn-info" data-toggle="collapse" href="#box61" role="button" aria-expanded="false" aria-controls="box61">
+              Read more
+            </a>
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#box62" aria-expanded="false" aria-controls="box62">
+              Ingredients
+            </button>
+          </p>
+          <div class="collapse" id="box61">
+            <div class="card card-body text-dark">
+              <pre>
+                <b>Step 1</b> Preheat the oven to 375 degrees F (190 degrees C).
+ 
+                <b>Step 2</b> Split baguette in half lengthwise. Warm pizza sauce in a
+                               microwave-safe bowl until hot, about  45 seconds.
+ 
+                <b>Step 3</b> Spread pizza sauce on baguette, sprinkle on cheese, and 
+                              scatter sausage and pepperoni on top as desired. 
+                              Place pizza onto a baking tray.
+ 
+                <b>Step 4</b> Bake in the preheated oven until cheese is golden, 
+                              about 18 minutes. Optional step: turn on the oven’s broiler, 
+                              set a rack 6 inches below the heating element, and broil the pizza 
+                              for a deeper color, 1 to 2 minutes.
+ 
+                <b>Step 5</b> Cut pizza crosswise into slices. Serve and enjoy.
+               </pre>        
+           </div>
+          </div>
+          <div class="collapse" id="box62">
+            <div class="card card-body text-dark">
+              <pre>
+               . 1 French baguette
+
+               . 1/2 cup pizza sauce, or as needed
+
+               . 2/3 cup shredded mozzarella cheese
+
+               . 2 ounces cooked and crumbled sausage
+
+               . 2 ounces mini pepperoni slices
+              </pre>
+            </div>
+          </div>
+
+         
+          <p>
+            
+            <a class="btn btn-info" data-toggle="collapse" href="#box63" role="button" aria-expanded="false" aria-controls="box63">
+              Add your Comment here
+            </a>
+            <div class="collapse" id="box63">
+              <div class="card card-body text-dark ">
+                <form>
+                  {% comment %} {% csrf_token %} {% endcomment %}
+                  {% comment %} <div class="form-group">
+                      <label for="name">Name </label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Full Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Phone No.</label>
+                      <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your phone no.">
+                  </div>
+                  <div class="form-group">
+                    <label for="dish">Dish Name</label>
+                    <input type="text" class="form-control" id="dish" name="dish" placeholder="Enter your dish name">
+                </div> {% endcomment %}
+                
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comment here...</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"  name="desc" rows="5"></textarea>
+                  </div>
+          
+                  <button type="submit" class="btn btn-info ">submit</button>
+                </form>
+
+              </div>
+            </div>
+          </p>
+          
+          
+        </div>
+  
+        <div>  
+          <img src="static\img\blog6.jpg " height='300px'  class="d-block w-100 rounded" alt="...">
+  
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+  {% comment %} box7 {% endcomment %}
+  <div class="container p-4 p-md-5  mt-5 mb-0  text-white rounded " height='200px' style="background-color:#f7a77e" >
+    <div class="box">
+      <div class="box d-flex justify-content-between">
+        <div class="col-md-6 px-0"> 
+
+          <h1 class="display-4 font-italic">Arancini (Italian Fried Risotto)</h1>
+          <p class="lead my-3">Arancini (pronounced “aran-chini”) are a Sicilian street food made of risotto that’s rolled into a ball, stuffed, breaded, and gently fried. You’re going to love the crispy outside and creamy inside of these Italian snacks!</p>
+          <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">visit for such more dishes...</a></p>
+          <p>
+            <br>
+            <a class="btn btn-info" data-toggle="collapse" href="#box71 " role="button" aria-expanded="false" aria-controls="box71">
+              Read more
+            </a>
+            <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#box72" aria-expanded="false" aria-controls="box72">
+              Ingredients
+            </button>
+          </p>
+          <div class="collapse" id="box71">
+            <div class="card card-body text-dark">
+              <pre>
+                <b>Step 1</b> Preheat the oven to 375 degrees F (190 degrees C).
+ 
+                <b>Step 2</b> Split baguette in half lengthwise. Warm pizza sauce in a
+                               microwave-safe bowl until hot, about  45 seconds.
+ 
+                <b>Step 3</b> Spread pizza sauce on baguette, sprinkle on cheese, and 
+                              scatter sausage and pepperoni on top as desired. 
+                              Place pizza onto a baking tray.
+ 
+                <b>Step 4</b> Bake in the preheated oven until cheese is golden, 
+                              about 18 minutes. Optional step: turn on the oven’s broiler, 
+                              set a rack 6 inches below the heating element, and broil the pizza 
+                              for a deeper color, 1 to 2 minutes.
+ 
+                <b>Step 5</b> Cut pizza crosswise into slices. Serve and enjoy.
+               </pre>        
+           </div>
+          </div>
+          <div class="collapse" id="box72">
+            <div class="card card-body text-dark">
+              <pre>
+               . 1 French baguette
+
+               . 1/2 cup pizza sauce, or as needed
+
+               . 2/3 cup shredded mozzarella cheese
+
+               . 2 ounces cooked and crumbled sausage
+
+               . 2 ounces mini pepperoni slices
+              </pre>
+            </div>
+          </div>
+
+         
+          <p>
+            
+            <a class="btn btn-info" data-toggle="collapse" href="#box73" role="button" aria-expanded="false" aria-controls="box73">
+              Add your Comment here
+            </a>
+            <div class="collapse" id="box73">
+              <div class="card card-body text-dark ">
+                <form>
+                  {% comment %} {% csrf_token %} {% endcomment %}
+                  {% comment %} <div class="form-group">
+                      <label for="name">Name </label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Full Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Phone No.</label>
+                      <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your phone no.">
+                  </div>
+                  <div class="form-group">
+                    <label for="dish">Dish Name</label>
+                    <input type="text" class="form-control" id="dish" name="dish" placeholder="Enter your dish name">
+                </div> {% endcomment %}
+                
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comment here...</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"  name="desc" rows="5"></textarea>
+                  </div>
+          
+                  <button type="submit" class="btn btn-info ">submit</button>
+                </form>
+
+              </div>
+            </div>
+          </p>
+          
+          
+        </div>
+  
+        <div>  
+          <img src="static\img\blog8.jpg " height='300px'  class="d-block w-100 rounded" alt="...">
+  
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+  <div class="commentbox p-4 p-md-5  mt-0 mb-0  text-white rounded d-flex justify-content-center "> 
+    <p>
+            
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Add your own Recipe blog here
+      </a>
+      <div class="collapse" id="collapseExample3">
+        <div class="card card-body text-dark ">
+          <form method="post" action="/blog">
+            {% csrf_token %} 
+           <div class="form-group" >
+                <label for="name">Name </label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Full Name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone No.</label>
+                <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your phone no.">
+            </div>
+            <div class="form-group">
+              <label for="dish">Dish Name</label>
+              <input type="text" class="form-control" id="dish" name="dish" placeholder="Enter your dish name">
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Ingredients</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1"  name="Ingredients" rows="5"></textarea>
+          </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea2">Write your Recipe here</label>
+              <textarea class="form-control" id="exampleFormControlTextarea2"  name="Recipe" rows="5"></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary ">submit</button>
+          </form>
+  
+        </div>
+      </div>
+    </p>
+
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+{% endblock body %}

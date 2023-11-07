@@ -1,0 +1,316 @@
+{% extends "base.html" %}
+{% block title %}About Us{% endblock title %}
+{% block body %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #0c0b09;
+  color: #fff;
+}
+
+a {
+  color: #cda45e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d9ba85;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #1a1814;
+}
+
+.section-title {
+  padding-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #cda45e;
+}
+
+
+        .about {
+            background: url("static\img\img14.jpg") center center;
+            background-size: cover;
+            position: relative;
+            padding: 80px 0;
+          }
+          
+          .about:before {
+            content: "";
+            background: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+          }
+          
+          .about .about-img {
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          .about .about-img img {
+            max-width: 100%;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+          }
+          
+          .about .about-img::before {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 60px;
+            height: 60px;
+            z-index: 1;
+            content: "";
+            border-left: 5px solid #cda45e;
+            border-top: 5px solid #cda45e;
+            transition: 0.5s;
+          }
+          
+          .about .about-img::after {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 60px;
+            height: 60px;
+            z-index: 2;
+            content: "";
+            border-right: 5px solid #cda45e;
+            border-bottom: 5px solid #cda45e;
+            transition: 0.5s;
+          }
+          
+          .about .about-img:hover {
+            transform: scale(1.03);
+          }
+          
+          .about .about-img:hover::before {
+            left: 10px;
+            top: 10px;
+          }
+          
+          .about .about-img:hover::after {
+            right: 10px;
+            bottom: 10px;
+          }
+          
+          .about .content {
+            position: relative;
+          }
+          
+          .about .content h3 {
+            font-weight: 600;
+            font-size: 26px;
+          }
+          
+          .about .content ul {
+            list-style: none;
+            padding: 0;
+          }
+          
+          .about .content ul li {
+            padding-bottom: 10px;
+          }
+          
+          .about .content ul i {
+            font-size: 20px;
+            padding-right: 4px;
+            color: #cda45e;
+          }
+          
+          .about .content p:last-child {
+            margin-bottom: 0;
+          }
+          
+          @media (min-width: 1024px) {
+            .about {
+              background-attachment: fixed;
+            }
+          }
+          
+          /*--------------------------------------------------------------
+          # Why Us
+          --------------------------------------------------------------*/
+          .why-us .box {
+            padding: 50px 30px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            transition: all ease-in-out 0.3s;
+            background: #1a1814;
+          }
+          
+          .why-us .box span {
+            display: block;
+            font-size: 28px;
+            font-weight: 700;
+            color: #cda45e;
+          }
+          
+          .why-us .box h4 {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 0;
+            margin: 20px 0;
+            color: rgba(255, 255, 255, 0.8);
+          }
+          
+          .why-us .box p {
+            color: #aaaaaa;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .why-us .box:hover {
+            background: #cda45e;
+            padding: 30px 30px 70px 30px;
+            box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+          }
+          
+          .why-us .box:hover span,
+          .why-us .box:hover h4,
+          .why-us .box:hover p {
+            color: #fff;
+          }
+    </style>
+   
+    
+</head>
+{% comment %} #67bac0-> blue background {% endcomment %}
+<body>
+    <section id="about" class="about" >
+        <div class="container" data-aos="fade-up" >
+    
+          <div class="row">
+            <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+              <div class="about-img">
+                <img src="static\img\finalLogo.jpg " height='300px' width='550px' alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+              <h3 style="color:#cda45e">FoodieFusion is a recipe and cookbook destination where you can create your own fully personalised digital cookbooks using recipes from top food brands and chefs, combined with your own ideas.</h3>
+              <p class="fst-italic">
+                All of the recipes listed on FoodieFusion have been created and tested by cooking & food brands, professional chefs, qualified food bloggers, recipe developers, nutritionists etc that have the credentials to be promoted here.              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Simply start creating your new cookbook by setting up your FoodieFusion account.</li>
+                <li><i class="bi bi-check-circle"></i> Update your eBooks whenever you like - just hit the collect button on a new recipe it will be added to any of your saved cookbooks. Or simply create new books as you find new recipes.</li>
+                <li><i class="bi bi-check-circle"></i> Download your cookbook to your computer as a PDF eBook, which is yours to keep forever. PDF cookbooks are also filled with links from the content page so you can easily get to the recipe you're looking for!</li>
+              </ul>
+              <p>
+                In case you haven't noticed, we won't bombard you with advertising that interups you when you're reading a recipe or isn't relevant to you...
+              </p>
+            </div>
+          </div>
+    
+        </div>
+      </section><!-- End About Section -->
+    
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us">
+        <div class="container" data-aos="fade-up">
+    
+          <div class="section-title">
+            <h2>Why Us</h2>
+            <p>Why Choose Our FoodieFusion</p>
+          </div>
+    
+          <div class="row">
+    
+            <div class="col-lg-4">
+              <div class="box" data-aos="zoom-in" data-aos-delay="100">
+                <span>01</span>
+                <h4>PERSONALISED EBOOK</h4>
+                <p>In collaboration with our contributing brand parters, we've designed the  eCookbook of its kind in Australia, where you can hand pick every page of your new cookbook from using recipes from the best cooking brands, combined with your own ideas, to create a treasured collection of your favourite recipes.
+                  Create your own cover, personalise with dedication messages and add own photos.</p>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="200">
+                <span>02</span>
+                <h4>IT'S FREE!</h4>
+                <p>FoodieFusion is entirely free to browse, print, share, watch and more! Create a free account and you can also collect recipes, upload your own recipes and save them in a collection of ecookbooks you’ve created, with access at any time on all your digital devices.
+                  Update your eBooks whenever you like - just hit the collect button on a new recipe it will be added to any of your saved cookbooks. Or simply create new books as you find new recipes.
+                </p>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 mt-4 mt-lg-0">
+              <div class="box" data-aos="zoom-in" data-aos-delay="300">
+                <span>03</span>
+                <h4>ADD YOUR OWN IDEAS</h4>
+                <p>You can add your own recipes to your account and books without them being posted on our site for the world to see. That's right, your recipes stay put in your private collection. Create an eBook and share your signature recipes as part of a personally designed collection for your family and friends save them in a collection of ecookbooks you’ve created, with access at any time on all your digital devices..</p>
+              </div>
+            </div>
+    
+          </div>
+    
+        </div>
+    </section><!-- End Why Us Section -->
+</body>
+</html>
+
+
+
+
+
+{% endblock body %}
